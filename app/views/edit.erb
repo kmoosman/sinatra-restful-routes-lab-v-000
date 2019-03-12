@@ -2,7 +2,7 @@
 <p> Includes: <%= @recipe.ingredients %> </p>
 
 <form action="/recipes/<%=@recipe.id%>/edit" method="post">
-  <input type="hidden" name="_method" value="put">
+  <input type="hidden" name="_method" value="patch">
   <!-- <input type="submit" value="delete"> -->
   <div>
     <label for="name">Recipe name:</label>
