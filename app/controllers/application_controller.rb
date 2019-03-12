@@ -17,6 +17,7 @@ class ApplicationController < Sinatra::Base
 
   get '/recipes/:id' do
     recipe = Recipe.find(params[:id].to_i)
+<<<<<<< HEAD
     # binding.pry
     erb '/show'
   end
@@ -27,6 +28,9 @@ class ApplicationController < Sinatra::Base
                         cook_time: params[:cook_time]})
     recipe.save
     redirect to '/recipes/'+recipe.id.to_s
+=======
+    erb :show
+>>>>>>> fa9040117991bb87c19b02ac2441476944d569d7
   end
 
 end
