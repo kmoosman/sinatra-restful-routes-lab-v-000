@@ -1,6 +1,6 @@
 <h1> <%= @recipe.name %> </h1>
-<p> Includes: <%= @recipe.ingredients %> </p>
 <p> Cooktime: <%= @recipe.cook_time %> </p>
+<p> Includes: <%= @recipe.ingredients %> </p>
 <form action="/delete" method="post">
   <input type="hidden" name="_method" value="delete">
   <input type="submit" value="delete">
