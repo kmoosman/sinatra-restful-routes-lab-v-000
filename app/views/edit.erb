@@ -1,3 +1,6 @@
+<h1> <%= @recipe.name %> </h1>
+<p> Includes: <%= @recipe.ingredients %> </p>
+
 <form action="/recipes/<%=@recipe.id%>/edit" method="post">
   <input type="hidden" name="_method" value="put">
   <!-- <input type="submit" value="delete"> -->
