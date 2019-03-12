@@ -30,4 +30,8 @@ class ApplicationController < Sinatra::Base
     erb :show
   end
 
+  delete '/delete' do
+    @recipe.delete
+  end
+
 end
