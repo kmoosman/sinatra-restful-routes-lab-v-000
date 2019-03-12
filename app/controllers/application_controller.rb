@@ -16,7 +16,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/recipes/:id' do
-    @recipe = Recipe.find(params[:id].to_i)
+    @recipe = Recipe.find(params[:id])
     # binding.pry
     erb :show
   end
@@ -36,7 +36,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/recipes/:id/edit' do
-    recipe = Recipe.find(params[:id].to_i)
+    recipe = Recipe.find(params[:id])
   end
 
 end
