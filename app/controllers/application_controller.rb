@@ -35,4 +35,8 @@ class ApplicationController < Sinatra::Base
     recipe.delete
   end
 
+  get '/recipes/:id/edit' do
+    recipe = Recipe.find(params[:id].to_i)
+  end
+
 end
